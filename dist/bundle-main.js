@@ -1,0 +1,1 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(function(){console.log("11");const e=document.getElementById("clickMe"),n=document.getElementById("message");e.addEventListener("click",(function(){n.innerHTML?n.innerHTML="":n.innerHTML="You clicked the button!"}))})),console.log("vardan");console.log(15,"hellow");console.log(50)})();
