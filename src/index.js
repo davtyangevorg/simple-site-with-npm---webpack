@@ -1,4 +1,9 @@
-import { sum } from "./helpers";
+import { createRoot } from "react-dom/client";
+import React from "react";
+
+import App from "./react-components/app.jsx";
+
+import { sum } from "./helpers-functions/helpers";
 import { multiply } from "./utils";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -24,3 +29,8 @@ console.log(total, text);
 
 const product = multiply(10, 5);
 console.log(product);
+
+// Render your React component instead
+const root = createRoot(document.getElementById("app"));
+
+root.render(<App />);
